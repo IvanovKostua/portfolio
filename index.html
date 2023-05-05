@@ -4,98 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
     <meta name="description" content="Сайт портфолио, содержащий информацию обо мне и моих навыках">
     <title>Сайт портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <header>
-        <nav>
-        <a><img src="image/main-logo.svg" alt="main_logo" width="60" height="60"></a>
-        <ul>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#skills">Навыки</a></li>
-            <li><a href="#hobbi">Интересы</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-        </ul>
-        </nav>
-    </header>
-   
-    <main>
-        <section>
-            <img src="image/user-photo.jpg" alt="user_photo" width="400" height="400">
-            <h1>Иванов Константин</h1>
-            <p class="subtitle_regular">Программист</p>
-        </section>
-        <section id="about">
-            <h3>Пара слов обо мне</h3>
-            <div class="regular_text">
-                <p>
-                    Привет ✌
-                </p>
-                <p> В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
-                    по направлению «Информатика и вычисли­тельная техника».
-                </p>
-                
-                <p> В прошлом году защитил диплом бакалавра на тему «Разработка очень сложного программного комплекса для супер-важной цели». 
-                    Работа была высоко оценена комиссией.
-                </p>
+    <div class="container">
+        <header class="main-header">
+            <nav>
+            <a><img src="image/main-logo.svg" alt="main_logo" width="60" height="60"></a>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#hobbi">Интересы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="main">
+                <img src="image/user-photo.jpg" alt="user_photo" width="400" height="400">
+                <h1>Иванов Константин</h1>
+                <p class="subtitle_regular">Программист</p>
+            </section>
+            <section id="about" class="intro">
+                <h3>Пара слов обо мне</h3>
+                <div class="regular_text">
+                    <p>
+                        Привет ✌
+                    </p>
+                    <p> В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
+                        по направлению «Информатика и вычисли­тельная техника».
+                    </p>
                     
-                <p> Также я уже успел поработать инженером в одном провайдере в Пушкино, 
-                    но в будущем планирую стать разработчиком сложных программных комплексов и систем.
-                </p>
-            </div>
-        </section>
-        <section id="skills">
-                <h3>Мои навыки</h3>
-                <span>Сортировать</span>
-                <button>по названию</button>
-                <button>по уровню</button>
-            <dl>
-                <dt>html</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-                <dt>css</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-                <dt>python</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-                <dt>c++</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-                <dt>c#</dt>
-                <dd>
-                    <div style="width: 40%;">40%</div>
-                </dd>
-            </dl>
-        </section>
-        <section id="hobbi">
-            <h3>Мои интересы</h3>
-            <p class="regular_text">Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
-            <p class="regular_text">Но помимо учёбы и работы я также люблю играть на гитаре и читать зарубежную классику.</p>
-        </section>
-        <section id="contacts">
-            <h3>Мои контакты</h3>
-            <ul>
-                <li><a href="tel:+79104437706">+7 910 443-77-06</a></li>
-                <li><a href="mailto:ivanovk1444@gmail.com">ivanovk1444@gmail.com</a></li>
-            </ul>
-            <ul>
-                <li><a href="">Vkontakte</a></li>
-                <li><a href="">Telegram</a></li>
-                <li><a href="">Github</a></li>
-            </ul>
-        </section>
-    </main>
-<footer>
-    <div>© 2023 Константин Иванов</div>
-</footer>
+                    <p> В прошлом году защитил диплом бакалавра на тему «Разработка очень сложного программного комплекса для супер-важной цели». 
+                        Работа была высоко оценена комиссией.
+                    </p>
+                        
+                    <p> Также я уже успел поработать инженером в одном провайдере в Пушкино, 
+                        но в будущем планирую стать разработчиком сложных программных комплексов и систем.
+                    </p>
+                </div>
+            </section>
+            <section id="skills" class="skills">
+                    <h3>Мои навыки</h3>
+                    <span>Сортировать</span>
+                    <button>по названию</button>
+                    <button>по уровню</button>
+                <dl>
+                    <dt>html</dt>
+                    <dd>
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                    <dt>css</dt>
+                    <dd>
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                    <dt>python</dt>
+                    <dd>
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                    <dt>c++</dt>
+                    <dd>
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                    <dt>c#</dt>
+                    <dd>
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                </dl>
+            </section>
+            <section id="hobbi" class="hobbi">
+                <h3>Мои интересы</h3>
+                <p class="regular_text">Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
+                <p class="regular_text">Но помимо учёбы и работы я также люблю играть на гитаре и читать зарубежную классику.</p>
+            </section>
+            <section id="contacts" class="contacts">
+                <h3>Мои контакты</h3>
+                <ul>
+                    <li><a href="tel:+79104437706">+7 910 443-77-06</a></li>
+                    <li><a href="mailto:ivanovk1444@gmail.com">ivanovk1444@gmail.com</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Vkontakte</a></li>
+                    <li><a href="">Telegram</a></li>
+                    <li><a href="">Github</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer class="main-footer">
+        <div class="container">© 2023 Константин Иванов</div>
+    </footer>
+
+
 </body>
 </html>
