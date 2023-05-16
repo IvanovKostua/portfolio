@@ -149,6 +149,8 @@ button:hover {
     height: 50px;
     border: 1px solid var(--blue);
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .social-link:hover {
@@ -157,44 +159,43 @@ button:hover {
 
 .social-link-vkontakte{
     background-image: url("../image/vk.svg");
-    background-repeat: no-repeat;
-    background-position: 40%, 10%;
 }
 
 .social-link-telegram{
     background-image: url("../image/telegram.svg");
-    background-repeat: no-repeat;
-    background-position: 40%, 10%;
 }
 
 .social-link-github{
     background-image: url("../image/github.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.contacts {
+ul.contacts {
     margin: 0;
     padding: 0;
     list-style-type: none;
-
 }
-
-.contacts li {
+    
+    
+li.contact-link {
     display: inline-block;
     margin: 0;
     padding: 0;
-
 }
 
-.contact-link-phone {
-    display: block;
+ul.contacts a{
+    padding: 5px 5px 0px 42px;
+    text-decoration: none;
     color: var(--black);
 }
 
-.contact-link-email {
-    display: block;
-    color: var(--black);
+a.contact-link-phone {
+    background-image: url("../image/phone.svg");
+    background-repeat: no-repeat;
+}
+
+a.contact-link-email {
+    background-image: url("../image/email.svg");
+    background-repeat: no-repeat;
 }
 
 .contacts a:hover {
@@ -262,9 +263,35 @@ button:hover {
 }
 
 .skill-item_csharp {
-    background-image: url("../image/skills/c#.svg");
+    background-image: url("../image/skills/csharp.svg");
 }
 
 .skill-item_photoshop {
     background-image: url("../image/skills/photoshop.svg");
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+    
+    
+.main-nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+ul.contacts {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.contacts li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+        padding: 5px, 5px, 0px, 42px;
 }
