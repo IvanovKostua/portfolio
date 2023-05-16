@@ -14,7 +14,7 @@ body {
 }
 
 h1  {
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -22,7 +22,7 @@ h1  {
 }
 
 h2  {
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -30,7 +30,7 @@ h2  {
 }
 
 h3  {
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -79,4 +79,192 @@ footer.main-footer {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.main-header .main-nav a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: var(--black);
+}
+
+.main-header .main-nav a:hover{
+    color: var(--blue);
+}
+
+button {
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--white);
+    color: var(--blue);
+    text-transform: lowercase;
+    border-radius: 8px;
+    padding: 6px 10px 10px;
+    border: 1px solid var(--blue);
+}
+
+button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.social-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+}
+
+.social-link:hover {
+    background-color: var(--blue);
+}
+
+.social-link-vkontakte{
+    background-image: url("../image/vk.svg");
+    background-repeat: no-repeat;
+    background-position: 40%, 10%;
+}
+
+.social-link-telegram{
+    background-image: url("../image/telegram.svg");
+    background-repeat: no-repeat;
+    background-position: 40%, 10%;
+}
+
+.social-link-github{
+    background-image: url("../image/github.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacts {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.contacts li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contact-link-phone {
+    display: block;
+    color: var(--black);
+}
+
+.contact-link-email {
+    display: block;
+    color: var(--black);
+}
+
+.contacts a:hover {
+    color: var(--blue);
+}
+
+.user-photo {
+    border-radius: 50%;
+}
+
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+
+.skill-level {
+    margin: 4px 0 20px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--black);
+    border-radius: 16px;
+}
+
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--blue);
+    border-radius: 8px;
+}
+
+
+.skill-item {
+    text-transform: lowercase;
+}
+
+
+.skill-item_html {
+    background-image: url("../image/skills/html.svg");
+}
+
+
+.skill-item_css {
+    background-image: url("../image/skills/css.svg");
+}
+
+
+.skill-item_cpp {
+    background-image: url("../image/skills/c++.svg");
+}
+
+
+.skill-item_python {
+    background-image: url("../image/skills/python.svg");
+}
+
+.skill-item_csharp {
+    background-image: url("../image/skills/c#.svg");
+}
+
+.skill-item_photoshop {
+    background-image: url("../image/skills/photoshop.svg");
 }

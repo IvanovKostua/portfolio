@@ -17,7 +17,7 @@
 <body>
     <div class="container">
         <header class="main-header">
-            <nav>
+            <nav class="main-nav">
             <a><img src="image/main-logo.svg" alt="main_logo" width="60" height="60"></a>
             <ul>
                 <li><a href="#about">Обо мне</a></li>
@@ -29,7 +29,7 @@
         </header>
         <main>
             <section class="main">
-                <img src="image/user-photo.jpg" alt="user_photo" width="400" height="400">
+                <img src="image/user-photo.jpg" alt="user_photo" width="400" height="400" class="user-photo">
                 <h1>Иванов Константин</h1>
                 <p class="subtitle_regular">Программист</p>
             </section>
@@ -57,25 +57,29 @@
                     <span>Сортировать</span>
                     <button>по названию</button>
                     <button>по уровню</button>
-                <dl>
-                    <dt>html</dt>
-                    <dd>
+                <dl class="skill-list">
+                    <dt class="skill-item skill-item_html">html</dt>
+                    <dd class="skill-level">
                         <div style="width: 40%;">40%</div>
                     </dd>
-                    <dt>css</dt>
-                    <dd>
+                    <dt class="skill-item skill-item_css">css</dt>
+                    <dd class="skill-level">
                         <div style="width: 40%;">40%</div>
                     </dd>
-                    <dt>python</dt>
-                    <dd>
+                    <dt class="skill-item skill-item_python">python</dt>
+                    <dd class="skill-level">
                         <div style="width: 40%;">40%</div>
                     </dd>
-                    <dt>c++</dt>
-                    <dd>
+                    <dt class="skill-item skill-item_cpp">c++</dt>
+                    <dd class="skill-level">
                         <div style="width: 40%;">40%</div>
                     </dd>
-                    <dt>c#</dt>
-                    <dd>
+                    <dt class="skill-item skill-item_csharp">c#</dt>
+                    <dd class="skill-level">
+                        <div style="width: 40%;">40%</div>
+                    </dd>
+                    <dt class="skill-item skill-item_photoshop">photoshop</dt>
+                    <dd class="skill-level">
                         <div style="width: 40%;">40%</div>
                     </dd>
                 </dl>
@@ -87,14 +91,14 @@
             </section>
             <section id="contacts" class="contacts">
                 <h3>Мои контакты</h3>
-                <ul>
-                    <li><a href="tel:+79104437706">+7 910 443-77-06</a></li>
-                    <li><a href="mailto:ivanovk1444@gmail.com">ivanovk1444@gmail.com</a></li>
+                <ul class="contacts">
+                    <li><a href="tel:+79104437706" class="contact-link-phone">+7 910 443-77-06</a></li>
+                    <li><a href="mailto:ivanovk1444@gmail.com" class="contact-link-email">ivanovk1444@gmail.com</a></li>
                 </ul>
-                <ul>
-                    <li><a href="">Vkontakte</a></li>
-                    <li><a href="">Telegram</a></li>
-                    <li><a href="">Github</a></li>
+                <ul class="social">
+                    <li><a href="" class="social-link social-link-vkontakte"><span class="visually-hidden">Vkontakte</span></a></li>
+                    <li><a href="" class="social-link social-link-telegram"><span class="visually-hidden">Telegram</span></a></li>
+                    <li><a href="" class="social-link social-link-github"><span class="visually-hidden">Github</span></a></li>
                 </ul>
             </section>
         </main>
