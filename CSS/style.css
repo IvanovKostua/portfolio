@@ -174,9 +174,8 @@ ul.contacts {
     padding: 0;
     list-style-type: none;
 }
-    
-    
-li.contact-link {
+
+ul.contacts li{
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -282,16 +281,4 @@ a.contact-link-email {
     margin: 0;
     padding: 0;
 }
-
-ul.contacts {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-ul.contacts li{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-        padding: 5px, 5px, 0px, 42px;
-}
+ 
