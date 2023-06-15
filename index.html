@@ -18,8 +18,9 @@
     <div class="container">
         <header class="main-header">
             <nav class="main-nav">
-            <a><img src="image/main-logo.svg" alt="main_logo" width="60" height="60"></a>
+            
             <ul>
+                <li><a><img src="image/main-logo.svg" alt="main_logo" width="60" height="60"></a></li>    
                 <li><a href="#about">Обо мне</a></li>
                 <li><a href="#skills">Навыки</a></li>
                 <li><a href="#hobbi">Интересы</a></li>
@@ -29,34 +30,42 @@
         </header>
         <main>
             <section class="main">
-                <img src="image/user-photo.jpg" alt="user_photo" width="400" height="400" class="user-photo">
+                <div>
                 <h1>Иванов Константин</h1>
                 <p class="subtitle_regular">Программист</p>
+                </div>
+                <img src="image/user-photo.jpg" alt="user_photo" width="400" height="400" class="user-photo">
             </section>
             <section id="about" class="intro">
                 <h3>Пара слов обо мне</h3>
                 <div class="regular_text">
-                    <p>
-                        Привет ✌
-                    </p>
-                    <p> В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
-                        по направлению «Информатика и вычисли­тельная техника».
-                    </p>
-                    
-                    <p> В прошлом году защитил диплом бакалавра на тему «Разработка очень сложного программного комплекса для супер-важной цели». 
-                        Работа была высоко оценена комиссией.
-                    </p>
+                    <div class = "text-wrapper">
+                        <p>
+                            Привет ✌
+                        </p>
+                        <p> В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
+                            по направлению «Информатика и вычисли­тельная техника».
+                        </p>
                         
-                    <p> Также я уже успел поработать инженером в одном провайдере в Пушкино, 
-                        но в будущем планирую стать разработчиком сложных программных комплексов и систем.
-                    </p>
+                        <p> В прошлом году защитил диплом бакалавра на тему «Разработка очень сложного программного комплекса для супер-важной цели». 
+                            Работа была высоко оценена комиссией.
+                        </p>
+                            
+                        <p> Также я уже успел поработать инженером в одном провайдере в Пушкино, 
+                            но в будущем планирую стать разработчиком сложных программных комплексов и систем.
+                        </p>
+                    </div>    
                 </div>
             </section>
             <section id="skills" class="skills">
+                <div>
                     <h3>Мои навыки</h3>
-                    <span>Сортировать</span>
-                    <button>по названию</button>
-                    <button>по уровню</button>
+                    <div class="second">
+                        <span>Сортировать</span>
+                        <button>по названию</button>
+                        <button>по уровню</button>
+                    </div>
+                </div>
                 <dl class="skill-list">
                     <dt class="skill-item skill-item_html">html</dt>
                     <dd class="skill-level">
@@ -86,8 +95,10 @@
             </section>
             <section id="hobbi" class="hobbi">
                 <h3>Мои интересы</h3>
-                <p class="regular_text">Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
-                <p class="regular_text">Но помимо учёбы и работы я также люблю играть на гитаре и читать зарубежную классику.</p>
+                <div class = "text-wrapper">
+                    <p class="regular_text">Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
+                    <p class="regular_text">Но помимо учёбы и работы я также люблю играть на гитаре и читать зарубежную классику.</p>
+                </div>
             </section>
             <section id="contacts" class="contacts">
                 <h3>Мои контакты</h3>
