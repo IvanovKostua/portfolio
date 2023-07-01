@@ -26,8 +26,8 @@ h2  {
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    margin: 0 0 40px 0;
-    line-height: 1.2;
+    line-height: 1.2;   
+    margin: 0px;
 }
 
 p.subtitle_regular  {
@@ -371,6 +371,14 @@ ul.social {
 }
 
 
+div.sort-wrapper {
+    margin: 0 0 40px 0;
+}
+
+h2.subtitle {
+    margin: 0 0 40px 0;
+}
+
 @media screen and (max-width: 1024px) {   
 	h1{
         font-size: 50px;
@@ -450,6 +458,11 @@ ul.social {
     }   
     h2  {
         font-size: 20px;
+    }
+    div.sort-wrapper {
+        margin: 0 0 30px 0;
+    }
+    h2.subtitle {
         margin: 0 0 30px 0;
     }
     p.subtitle_regular {
@@ -549,6 +562,21 @@ ul.social {
     }
     }
 
+@media screen and (max-width: 550px) {  
+    div.sort {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    div.sort-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .sort button {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .skills div{
         flex-direction: column;
@@ -581,6 +609,11 @@ ul.social {
     }   
     h2  {
         font-size: 20px;
+    }
+    div.sort-wrapper {
+        margin: 0 0 30px 0;
+    }
+    h2.subtitle {
         margin: 0 0 30px 0;
     }
     p.subtitle_regular {
