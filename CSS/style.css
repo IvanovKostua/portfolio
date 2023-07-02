@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.dark-theme {
+    --black: #CCCCCC;
+    --white: #031923;
+}
+
+.dark-theme .social-link {
+    background-color: #CCCCCC;
+}
+
 body {
     font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
@@ -11,6 +20,7 @@ body {
     font-size: 20px;
     line-height: 1.5;
     color: var(--black);
+    background-color: var(--white);
 }
 
 h1  {
@@ -179,9 +189,17 @@ a.contact-link-phone {
     background-repeat: no-repeat;
 }
 
+.dark-theme .contact-link-phone {
+    background-image: url("../image/dark-theme/phone.svg");
+}
+
 a.contact-link-email {
     background-image: url("../image/email.svg");
     background-repeat: no-repeat;
+}
+
+.dark-theme .contact-link-email {
+    background-image: url("../image/dark-theme/email.svg");
 }
 
 .contacts a:hover {
