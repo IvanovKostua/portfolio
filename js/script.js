@@ -184,3 +184,34 @@ const menu = {
 };
 
 menu.close();
+
+const switchCheckbox = document.querySelector(".switch-checkbox");
+
+function switchTheme() {
+  if (switchCheckbox.checked) {
+    document.body.classList.remove("dark-theme");
+    localStorage.setItem("theme", true);
+  } else {
+    document.body.classList.add("dark-theme");
+    localStorage.setItem("theme", false);
+  }
+}
+
+switchCheckbox.addEventListener("change", (e) => {
+  switchTheme();
+});
+
+function startTheme() {
+  if (localStorage.getItem("theme") == "true") {
+    document.body.classList.remove("dark-theme");
+    switchCheckbox.checked = true;
+    console.log("test1");
+  }
+  if (localStorage.getItem("theme") == "false") {
+    document.body.classList.add("dark-theme");
+    switchCheckbox.checked = false;
+    console.log(localStorage.getItem("theme"));
+  }
+}
+
+startTheme();
