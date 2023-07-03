@@ -578,6 +578,9 @@ h2.subtitle {
     .skills .sort-wrapper h2{
         margin-bottom: 0;
     }
+    .main-nav_closed {
+        display: none;
+    }
     }
 
 @media screen and (max-width: 550px) {  
