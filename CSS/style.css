@@ -529,6 +529,9 @@ h2.subtitle {
         height:30px;
         border: none;
     }
+    .nav-btn:hover{
+        background-color: transparent;
+    }
     .nav-btn_close {
         background-image: url("../image/close.svg");
     }
