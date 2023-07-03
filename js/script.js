@@ -1,20 +1,21 @@
 "use strict";
 
 const skills = {
+  isSort: false,
   data: [
     {
                 skillName: "html",
-                skillLevel: 40,
+                skillLevel: 60,
                 skillImage: "html.svg",
             },
             {
                 skillName: "css",
-                skillLevel: 40,
+                skillLevel: 50,
                 skillImage: "css.svg",
             },
             {
                 skillName: "python",
-                skillLevel: 40,
+                skillLevel: 60,
                 skillImage: "python.svg",
             },
             {
@@ -24,16 +25,17 @@ const skills = {
             },
             {
                 skillName: "c#",
-                skillLevel: 40,
+                skillLevel: 50,
                 skillImage: "csharp.svg",
             },
             {
                 skillName: "photoshop",
-                skillLevel: 40,
+                skillLevel: 30,
                 skillImage: "photoshop.svg",
             },
   ],
   generateList: function (parentElement) {
+    parentElement.innerHTML = "";
     this.data.forEach((item) => {
       const dt = document.createElement("dt");
       const dd = document.createElement("dd");
@@ -48,7 +50,92 @@ const skills = {
       parentElement.append(dt, dd);
     });
   },
+
+  sortList: function(type){
+    switch (type) {
+      case "name":
+        console.log("сортировка по имени");
+        sortByName(this.data);
+        break;
+
+      case "level":
+        console.log("сортировка по уровню");
+        sortByLevel(this.data);
+        break;
+
+      default:
+        console.log("неизвестная кнопка");
+    }
+  }
 };
+
+const skillSort = document.querySelector("div.sort");
+
+
+skillSort.addEventListener("click", (e) => {
+  let target = e.target;
+  if (target.nodeName == "BUTTON") {
+    switch (target.dataset.type){
+      case 'name':
+        sortByName();
+        break;
+      case 'level':
+        sortByLevel();
+        break;
+      default:
+        console.log('неизвестная кнопка')
+    }
+    // console.log(e.target);
+  }
+});
+
+function sortByName() {
+
+  if (skills.isSort !== "name") {
+    skills.data.sort(getComparer("skillName"));
+    skills.isSort = "name";
+
+    console.log("отсортировали данные по имени");
+  } else {
+    skills.data.reverse();
+
+    console.log("инвертировали порядок сортировки");
+  }
+
+  skills.generateList(skillList);
+};
+
+function sortByLevel() {
+
+  if (skills.isSort !== "level") {
+    skills.data.sort(getComparer("skillLevel"));
+    skills.isSort = "level";
+
+    console.log("отсортировали данные по уровню");
+  } else {
+    skills.data.reverse();
+
+    console.log("инвертировали порядок сортировки");
+  }
+
+  skills.generateList(skillList);
+};
+
+function getComparer(prop) {
+  return function (a, b) {
+
+    if(a[prop] < b[prop]) {
+      return -1;
+    }
+
+    if (a[prop] > b[prop]) {
+      return 1;
+    }
+
+    return 0;
+  }
+}
+ 
 
 const skillList = document.querySelector("dl.skill-list");
 
