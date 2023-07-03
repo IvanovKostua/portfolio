@@ -2,38 +2,7 @@
 
 const skills = {
   isSort: false,
-  data: [
-    {
-                skillName: "html",
-                skillLevel: 60,
-                skillImage: "html.svg",
-            },
-            {
-                skillName: "css",
-                skillLevel: 50,
-                skillImage: "css.svg",
-            },
-            {
-                skillName: "python",
-                skillLevel: 60,
-                skillImage: "python.svg",
-            },
-            {
-                skillName: "cpp",
-                skillLevel: 40,
-                skillImage: "c++.svg",
-            },
-            {
-                skillName: "c#",
-                skillLevel: 50,
-                skillImage: "csharp.svg",
-            },
-            {
-                skillName: "photoshop",
-                skillLevel: 30,
-                skillImage: "photoshop.svg",
-            },
-  ],
+  data: [],
   generateList: function (parentElement) {
     parentElement.innerHTML = "";
     this.data.forEach((item) => {
@@ -66,7 +35,19 @@ const skills = {
       default:
         console.log("неизвестная кнопка");
     }
-  }
+  },
+  initList: function (url, parentElement, skillSection) {
+    fetch(url)
+      .then((data) => data.json())
+      .then((object) => {
+        this.data = object;
+        this.generateList(parentElement);
+      })
+      .catch(() => {
+        console.error("что-то пошло не так");
+        skillSection.remove();
+      });
+  },
 };
 
 const skillSort = document.querySelector("div.sort");
@@ -205,13 +186,14 @@ function startTheme() {
   if (localStorage.getItem("theme") == "true") {
     document.body.classList.remove("dark-theme");
     switchCheckbox.checked = true;
-    console.log("test1");
   }
   if (localStorage.getItem("theme") == "false") {
     document.body.classList.add("dark-theme");
     switchCheckbox.checked = false;
-    console.log(localStorage.getItem("theme"));
   }
 }
 
 startTheme();
+
+const skillSection = document.querySelector(".skills");
+skills.initList("db/skills.json", skillList, skillSection);

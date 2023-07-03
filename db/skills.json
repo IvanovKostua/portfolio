@@ -1,0 +1,32 @@
+[
+    {
+        "skillName": "html",
+        "skillLevel": 60,
+        "skillImage": "html.svg"
+    },
+    {
+        "skillName": "css",
+        "skillLevel": 50,
+        "skillImage": "css.svg"
+    },
+    {
+        "skillName": "python",
+        "skillLevel": 60,
+        "skillImage": "python.svg"
+    },
+    {
+        "skillName": "cpp",
+        "skillLevel": 40,
+        "skillImage": "c++.svg"
+    },
+    {
+        "skillName": "c#",
+        "skillLevel": 50,
+        "skillImage": "csharp.svg"
+    },
+    {
+        "skillName": "photoshop",
+        "skillLevel": 30,
+        "skillImage": "photoshop.svg"
+    }
+]
